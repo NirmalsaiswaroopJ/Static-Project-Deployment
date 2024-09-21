@@ -157,22 +157,20 @@
                     <i class="fas fa-lock"></i>
                 </div>
                 <div class="form-group">
-                    <form action="user_home.html" method="post">
-                        <button type="submit" class="btn btn-success">Login</button>
-                    </form>
+                    <button type="button" class="btn btn-success" onclick="window.location.href='user_home.html';">Login</button>
                 </div>
                 <div class="checkbox-container">
                     <div class="checkbox">
                         <label><input type="checkbox"> Remember me</label>
                     </div>
                     <div>
-                        <a href="{{ url_for('forgot_password') }}">Forgot Password?</a>
+                        <a href="#forgot_password.html">Forgot Password?</a>
                     </div>
                 </div>
             </form>
         </div>
         <div class="register-link">
-            <a href="{{ url_for('user_register') }}">Don't have an account? Register</a>
+            <a href="#user_registration.html">Don't have an account? Register</a>
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
