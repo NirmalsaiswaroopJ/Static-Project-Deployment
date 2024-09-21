@@ -154,14 +154,14 @@
         <h1>User Profile</h1> 
         <nav>
             <ul>
-                <li><a class="nav-link nav-link-home" href="/user-home">Home</a></li>
+                <li><a class="nav-link nav-link-home" href="#user_home.html">Home</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <div class="profile-section">
             <h2>Update Your Information</h2>
-            <form method="POST" action="{{ url_for('profile') }}">
+            <form method="POST" action="#">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" value="{{ user['name'] }}" required>
 
