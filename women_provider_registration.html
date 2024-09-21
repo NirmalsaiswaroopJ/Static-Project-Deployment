@@ -182,11 +182,11 @@
         <div class="quote-container">
             <h3>"Empowering women to shine and thrive."</h3>
             <p>Join our platform and showcase your expertise to the world.</p>
-            <img src="/static/images/women_service.jpeg" alt="Empowering Women Image">
+            <img src="women_service.jpeg" alt="Empowering Women Image">
         </div>
         <div class="form-container">
             <h2>Women Service Provider Registration</h2>
-            <form method="POST" action="{{ url_for('women_provider_register') }}">
+            <form method="POST" action="#">
                 <div class="form-group">
                     <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
                 </div>
@@ -222,11 +222,12 @@
                 <div class="form-group">
                     <input type="text" class="form-control" id="gov_id" name="gov_id" placeholder="Government ID" required>
                 </div>
-                <button type="submit" class="btn-register">Register</button>
+                <button type="submit" class="btn btn-register" onclick="window.location.href='women_login.html';">Login</button>
+
             </form>
-            <a href="/" class="home-btn">Return to Home</a>
+            <a href="#index.html" class="home-btn">Return to Home</a>
             <div class="login-link">
-                Already have an account? <a href="{{ url_for('women_login') }}">Login</a>
+                Already have an account? <a href="#women_login.html">Login</a>
             </div>
         </div>
     </div>
