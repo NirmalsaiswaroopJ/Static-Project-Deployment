@@ -165,11 +165,11 @@
         <div class="quote-container">
             <h3>"Elevate your skills and help others with your expertise."</h3>
             <p>Join our network of service providers and make a difference today.</p>
-            <img src="/static/images/service.jpeg" alt="Service Image">
+            <img src="service.jpeg" alt="Service Image">
         </div>
         <div class="form-container">
             <h2>Service Provider Registration</h2>
-            <form method="POST" action="{{ url_for('provider_register') }}">
+            <form method="POST" action="#">
                 <div class="form-group">
                     <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
                 </div>
@@ -190,9 +190,9 @@
                 </div>
                 <button type="submit" class="btn-register">Register</button>
             </form>
-            <a href="/" class="home-btn">Return to Home</a>
+            <a href="#index.html" class="home-btn">Return to Home</a>
             <div class="login-link">
-                Already have an account? <a href="{{ url_for('provider_login') }}">Login</a>
+                Already have an account? <a href="#provider_login.html">Login</a>
             </div>
         </div>
     </div>
