@@ -154,14 +154,14 @@
         <h1>Provider Profile</h1>
         <nav>
             <ul>
-                <li><a class="nav-link nav-link-home" href="/provider-home">Home</a></li>
+                <li><a class="nav-link nav-link-home" href="#provider_home.html">Home</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <div class="profile-section">
             <h2>Update Your Information</h2>
-            <form method="POST" action="{{ url_for('provider_profile') }}">
+            <form method="POST" action="#">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" value="{{ provider['name'] }}" required>
         
