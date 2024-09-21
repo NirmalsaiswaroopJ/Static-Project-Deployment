@@ -166,10 +166,10 @@
     <nav>
         <div class="container">
             <ul>
-                <li><a href="/user-home">Home</a></li>
-                <li><a href="/my-bookings">My Bookings</a></li>
-                <li><a href="/user-profile">Profile</a></li>
-                <li><a href="{{ url_for('logout') }}">Logout</a></li>
+                <li><a href="#user_home.html">Home</a></li>
+                <li><a href="#my_bookings.html">My Bookings</a></li>
+                <li><a href="#user_profile.html">Profile</a></li>
+                <li><a href="#index.html">Logout</a></li>
             </ul>
         </div>
     </nav>
@@ -181,7 +181,7 @@
 
         <main>
             <h2>Fill in the Details</h2>
-            <form method="POST" action="{{ url_for('book_appointment') }}">
+            <form method="POST" action="#">
                 <div class="form-group">
                     <label for="date">Select Date:</label>
                     <input type="date" id="date" name="date" required>
